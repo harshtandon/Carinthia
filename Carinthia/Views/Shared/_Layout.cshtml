@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+    @Scripts.Render("~/bundles/scripts")
+    @Styles.Render("~/bundles/styles")
+
+    <script>
+        $(function () {
+            if (true) {     // Assert on actual Solr status here
+                if (!$('.alert-box').length) {
+                    $('<div class="alert-box failure">Solr Not Up!</div>').prependTo('form');
+                    // .delay(5000).fadeOut(1000, function () {$('.alert-box').remove(); });
+                    $('.solrAction').attr("disabled", "true");
+                };
+            }
+        });
+    </script>
+
+    @RenderSection("script", required: false)
+
+
+</head>
+<body>
+    @Html.Partial("_NavBar")
+    @RenderBody()
+</body>
+</html>

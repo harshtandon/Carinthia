@@ -1,0 +1,31 @@
+﻿.alert-box {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+  position: relative;
+  top: 0;
+  padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+  font-size: 0.8125rem;
+  background-color: #008cba;
+  border-color: #0078a0;
+  color: white;
+  box-shadow: 0px 1px 5px 0 darkslategrey;
+}
+/*.alert-box.success {
+  background-color: #43ac6a;
+  border-color: #3a945b;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}*/
+
+.alert-box.failure {
+  background-color: #F16E66;
+  border-color: #3a945b;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}

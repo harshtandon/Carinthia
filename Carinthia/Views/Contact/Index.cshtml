@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Index Contact";
+}
+
+@model Carinthia.Domain.Contact
+
+
+@section script
+{
+    <script type="text/javascript">
+        $(function () {
+            $("[id=ContRegDate]").datepicker();
+        });
+    </script>
+
+}
+
+@using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <h2 style="text-align: center; padding-bottom: 10px; padding-top: 10px;">Index Contact</h2>
+
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.FirstName, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(mod => mod.FirstName, new { @class = "form-control input-md", @required = "" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.LastName, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(mod => mod.LastName, new { @class = "form-control input-md" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.EmailAddr, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(mod => mod.EmailAddr, new { @class = "form-control input-md" })
+        </div>
+    </div>
+
+    
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.SourceId, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(mod => mod.SourceId, new { @class = "form-control input-md" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.ContType, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.DropDownListFor(mod => mod.ContType, new SelectList(new List<object>  { new { Text = "Speaker", Value = "Speaker" },
+                                                                                          new { Text = "Attendee", Value = "Attendee" },
+                                                                                          new { Text = "Gold Pass", Value = "Gold Pass" },
+                                                                                          new { Text = "Silver Pass", Value = "Silver Pass" }
+                                                                                        }, "Value", "Text"), new { @class = "form-control" })
+
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.ContRegDate, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextBoxFor(mod => mod.ContRegDate, new { @class = "form-control input-md" })
+        </div>
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(mod => mod.NoteText, new { @class = "col-md-4 control-label" })
+        <div class="col-md-4">
+            @Html.TextAreaFor(mod => mod.NoteText, new { @class = "form-control input-md" })
+        </div>
+    </div>
+    
+@*<div class="form-group">
+        <label class="col-md-4 control-label" for="flUpload">Attachment</label>
+        <div class="col-md-4">
+            <input id="flUpload" name="flUpload" class="input-file" type="file">
+        </div>
+    </div>*@
+
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="btnIndex"></label>
+        <div class="col-md-4" style="text-align: center">
+            <button id="btnIndex" name="btnIndex" class="btn btn-primary solrAction" type="submit">Index contact</button>
+        </div>
+    </div>
+}

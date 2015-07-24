@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carinthia.Web", "Carinthia\Carinthia.Web.csproj", "{99A9DC86-296F-4671-A55B-0AC61ADED59E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carinthia.Tests", "Carinthia.Tests\Carinthia.Tests.csproj", "{3C24602D-64D1-49D5-A34C-7701E3C3A82C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carinthia.Domain", "Carinthia.Domain\Carinthia.Domain.csproj", "{6DB6FEDD-E6DD-4420-9616-AB5C77A0440D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carinthia.SolrNet", "Carinthia.SolrNet\Carinthia.SolrNet.csproj", "{024AAEFD-6409-4A45-9C22-CA82780DE41E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A9DC86-296F-4671-A55B-0AC61ADED59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A9DC86-296F-4671-A55B-0AC61ADED59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A9DC86-296F-4671-A55B-0AC61ADED59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A9DC86-296F-4671-A55B-0AC61ADED59E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C24602D-64D1-49D5-A34C-7701E3C3A82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C24602D-64D1-49D5-A34C-7701E3C3A82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C24602D-64D1-49D5-A34C-7701E3C3A82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C24602D-64D1-49D5-A34C-7701E3C3A82C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB6FEDD-E6DD-4420-9616-AB5C77A0440D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB6FEDD-E6DD-4420-9616-AB5C77A0440D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB6FEDD-E6DD-4420-9616-AB5C77A0440D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB6FEDD-E6DD-4420-9616-AB5C77A0440D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024AAEFD-6409-4A45-9C22-CA82780DE41E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024AAEFD-6409-4A45-9C22-CA82780DE41E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024AAEFD-6409-4A45-9C22-CA82780DE41E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024AAEFD-6409-4A45-9C22-CA82780DE41E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
